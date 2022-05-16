@@ -1,0 +1,183 @@
+*{
+    box-sizing:border-box;
+    font-family:'Titillium Web', sans-serif;
+}
+html{
+    margin:50pt;
+    padding: 10px; 
+    background-image: url("images/wallls.jpeg"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-color: rgb(194, 207, 239);
+    background-size : cover;
+}
+
+body{
+    padding: 50px 30px 30px 50px ;
+    box-shadow: 5px 5px 10px 2px rgb(104, 107, 169);
+    background-image: radial-gradient(rgba(74, 90, 102, 0.7),rgba(184, 206, 160,0.5),rgb(189, 189, 230));
+    
+}
+h1{
+    text-shadow: 2px 2px #929bda;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper{
+    display:flex;
+}
+nav{
+    flex-direction: column;
+    flex:2;
+    order:1;
+    font-size: larger;
+}
+input{
+    height : 30px;
+    padding-bottom: 20px;
+}
+nav {
+    padding-right: 2%;
+    width: 15%;
+    line-height: 80px;
+    font-size:1.5em;
+    display: flex;
+    flex-direction: column;
+    flex:2
+}
+nav a:hover{
+    font-size:larger;
+    color:rgb(46, 46, 125)
+}
+nav a {
+    text-decoration: none;
+}
+nav li{
+    list-style: none;
+    padding-bottom: 30%;
+}
+.comments{
+    flex:8;
+    order:2;
+    width :60%;
+}
+
+::placeholder{
+    font-size: 15pt;
+}
+.comment p{
+    border: 1px rgb(36, 61, 36) dotted;
+    padding: 30px 50px 30px 10px;
+    font-size: larger;
+    text-align: left;
+}
+
+
+#label{
+    display:flex;
+    order:1;
+    flex:3;
+    font-size: 2em;
+     
+}
+#input{
+     display: flex;
+     order:2;
+     flex:7;
+ }
+input[type=range]{
+    accent-color: rgb(33, 27, 88);
+}
+
+fieldset{
+     padding: 30px 60px 60px 40px;
+ }
+legend{
+    background-color: rgb(75, 128, 185);
+    font-size: larger;
+    text-align: center;
+}
+ 
+#gameid{
+    float:right;
+    width: 60%;
+}
+#email{
+    float:left;
+    width: 40%; 
+}
+#emailinput{
+    float:right;
+    width: 60%;
+}
+select{
+    float:right;
+    width: 60%;
+}
+#rating{
+    float:right;
+    width: 60%;
+}
+ 
+footer{
+  text-align: center;
+  clear:left;
+  font-size: smaller;
+  background-color: black;
+  color:white;
+
+}
+.comment img{
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+button{
+    font-size: larger;
+    border-radius:  10%;
+    margin:auto;
+    align-items: center;
+    padding : 10px 20px 10px 20px;
+}
+.buttons{
+     
+    align-items: center;
+    position: absolute;
+}
+@media(max-width :1024px){
+    ul{
+        display:inline;
+    }
+    #wrapper{
+        display:block;
+    }
+    textarea{
+        width : 70%;
+    }
+    form{
+        min-width:fit-content;
+    }
+     
+}
+@media(max-width :768px){
+    ul{
+        display:inline;
+    }
+    .comments{
+         max-width: min-content;
+         margin:auto;
+        
+    }
+    form{
+        max-width:fit-content;
+    }
+    textarea{
+        width:50%;
+    }
+}
+ 
+ 
+ 
+ 

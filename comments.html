@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+    <link rel="icon" type="image/x-icon" href="images/commenticon.jpeg">
+    <link rel = "stylesheet" href = "comments.css">
+    <script src = "comments.js"></script>
+ 
+</head>
+<body>
+        <header>
+            <h1>Welcome to the comment section!!</h1>
+        </header>
+       
+    <div class="wrapper">   
+        <nav>
+            <a href = "index.html">Home</a>
+            <a href = "explanation.html">Explanation</a>
+            <a href = "references.html">References</a>
+            <a href="comments.html">Comments  </a>
+        </nav>
+        
+        <main class="comments">
+                <div class = "comment" id = "comment">
+
+                    <p>
+                        <img src = "images/avatar-1_4x.jpg.webp" alt = "avatar-1_4x" width= "100">
+                        Oat_latte: The game is challenging!!<br><br>
+                    </p>
+                    <p>
+                        <img src = "images/avatar-1_4x.jpg.webp" alt = "avatar-1_4x" width= "100">
+                        Cameron_not_camera : The design and all is good but could have been better!! 
+                    </p>
+                    <p>
+                        <img src = "images/avatar-1_4x.jpg.webp" alt = "avatar-1_4x" width="100">
+                        Hazel_nut : The design and all is good but could have been better!!!  
+                    </p>
+                    <p>
+                        <img src = "images/avatar-1_4x.jpg.webp" id = "img" alt = "avatar-1_4x" width="100">
+                        Capp_2001 : Looking forward to a better version of this game!!  
+                    </p>
+              
+                </div>
+                <textarea name="text" id = "text" rows="6" cols = "120" placeholder="We would like to hear from you"></textarea><br>
+                
+               
+                <div class = "buttons">
+                    <button type = "button" onclick = "comment()">Comment</button>
+                </div>
+                <br><br><br>
+           
+                
+        
+            <form action="/action_page.php">
+                <fieldset>
+                <legend>Your Experience</legend>
+                
+                    <label for="gameid" id = "game_id">Game ID :</label> 
+                    <input type ="text" name = "game_id" id = "gameid" required> 
+                    <br><br><br>
+                    <label for="emailinput"  id = "email">Email:</label>
+                    <input type ="text" name = "email" id = "emailinput"> <br>
+                    
+                    <br><br>.\
+                    <label for="source">Where did you hear about us?<br>(Select all that apply)</label>
+                    <select name="source" id="source" size="3" multiple>
+                        <option value="internet">Internet</option>
+                        <option value="magazine">Apps</option>
+                        <option value="newspaper">Ads</option>
+                        <option value="words">Friends</option>
+                        <option value ="ohter">Other</option>
+                    </select> <br><br><br><br>
+                    
+                        <label for="rating" id ="ratings" >Rate the overall experience:<br>(0 = poor, 10 = great)</label>
+                        <input type="range" name="rating" id="rating" min="1" max="10" step="1" > 
+                        <br><br>
+                        <div class = "buttons">
+                        <button type ="submit" id ="submit" onclick = "comment()" >Submit</button>
+                        </div>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+    <footer>Made by Cameron Fung and Hazel Phyu Douglas College 2022</footer>
+</body>
+</html>

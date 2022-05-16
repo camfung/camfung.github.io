@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+header{
+    background-color: rgb(84,117,208);
+    color: white;
+    margin: 5%;
+}
+
+body{
+    background-image: url("images/wallls.jpeg");
+    font-family: 'Titillium Web', sans-serif;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.wrapper{
+    width: 90%;
+    height: 45%;
+    background-color: rgba(255, 255, 255, 0.447);
+    overflow: auto;
+    margin: auto;
+}
+
+.main{
+    display: flex;
+}
+
+#maze{
+    width: 70%;
+}
+
+nav{
+    padding-right: 2%;
+    width: 15%;
+    padding-bottom: 10%;
+    font-size:1.5em;
+    display: flex;
+    flex-direction: column;
+    flex:2
+}
+
+nav a {
+    text-decoration: none;
+}
+nav li{
+    list-style: none;
+    padding-bottom: 30%;
+}
+
+
+.makeM {
+    padding: 5%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+form, #sketch-holder{
+    padding: 2%;
+    margin: 3%;
+}
+#sketch-holder
+{
+    padding-left: 10%;
+}
+form > #makeM{
+    width: 10em;
+    margin: auto;
+}
+form > input{
+    display: inline;
+    width: 30%;
+}
+
+label{
+    width: 50%;
+}
+
+.makeM{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.iframe-container {
+    overflow: hidden;
+    /* 16:9 aspect ratio */
+    padding-top: 56.25%;
+    position: relative;
+  }
+.iframe-container iframe {
+     border: 0;
+     height: 70%;
+     left: 0;
+     position: absolute;
+     top: 0;
+     width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+    .makeM{
+        display: block;
+    }
+    .main{
+        display: block;
+        padding: 8%;
+    }
+    nav li{
+        display: inline;
+        padding: 2%;
+        overflow: none;
+    }
+    nav {
+        display: inline;
+        width: 90%;
+
+    }
+    nav a{
+        font-size: smaller;
+    }
+}

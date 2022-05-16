@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+*{
+    box-sizing:border-box;
+    font-family:'Titillium Web', sans-serif;
+}
+html{
+    margin:50pt;
+    padding: 10px; 
+    background-image: url("images/wallls.jpeg"); 
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-color: rgb(233, 240, 229);
+    background-size : cover;
+}
+li{
+    list-style-type: none;
+    align-items: center;
+     
+}
+li{
+    display:inline;
+    padding-left: 20px;
+    padding-right: 30px;
+    font-size: 120%;
+}
+li a:hover{
+    font-size: larger;
+}
+li a:focus{
+    color: rgb(119, 99, 185)
+}
+body{
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    box-shadow: 5px 5px 10px 2px rgb(168, 179, 220);
+    background-image: radial-gradient(rgba(156, 158, 214, 0.7),rgba(181, 181, 251, 0.5),rgb(164, 171, 211));
+    
+}
+header{
+    color:rgb(216, 217, 227);
+    background-color: rgb(84, 117, 208);
+}
+#layout{
+    display:flex;
+    gap: 5%;
+}
+#tabs{
+    display:flex;
+    flex-direction: column;
+    order:1;
+    flex:2;
+    width: 100%;
+}
+#content{
+    display:flex;
+    order:2;
+    flex:6;
+}
+button{
+    display:block;
+    width: 100%;
+    padding : 22px 22px;
+    border: none;
+    font-size: 120%;
+    color: rgb(95, 147, 237);
+}
+
+button:hover{
+    color :rgb(27, 46, 4);
+    background-color: rgb(220, 229, 237);
+}
+.content{
+    display:none;
+}
+
+img{
+    float:right;
+    height: 70%;
+    width: 40%;
+    filter:drop-shadow(8px 8px 10px rgb(170, 154, 222))
+}
+p{
+    float :left;
+    width :50%;
+    font-size: larger;
+    padding : 10px 20px 10px 30px;
+}
+ 
+ 
+footer{
+    text-align: center;
+    clear:left;
+    font-size: smaller;
+    background-color: black;
+    color:white;
+  
+}
+@media(max-width:1024px){
+    #layout{
+         display: block;
+    }
+}

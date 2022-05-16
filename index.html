@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="scripts/sketch.js"></script>
+    <script src="scripts/Cell.js"></script>
+    <script src="scripts/maze.js"></script>
+    <script src="scripts/astar.js"></script>
+    <script src="scripts/game.js" defer></script>
+
+  </head>
+  <body>
+    <div class="wrapper"> 
+      <header>
+        <h1>Maze Generation</h1>
+      </header>   
+      <div class="main">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explanation.html">Explanation</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="comments.html">Comments</a></li>
+          </ul>
+        </nav>
+        <div id = "maze">
+        <div id="sketch-holder">
+          <!-- The maze will go here! -->        
+        </div>
+          <form id="form-holder">
+            <div class="makeM">
+              <label for="width">width</label>
+              <input type="range" name="width" id="width" value="50" max="100" min="2" oninput="num.value = this.value">
+              <output id="num">0</output>
+              <label for="bg">Background Colour</label>
+              <input type="color" name="bg" id="bg">
+              <label for="wall">Wall Colour</label>
+              <input type="color" name="wall" id="wall" value="#ba90fe">
+              <label for="line">Path Colour</label>
+              <input type="color" name="line" id="line" value="#FFFFFF">
+            </div>
+            <input type="button" value="play" onclick="game()">
+            <input type="button" id="go" value="Generate Maze" onclick="genMaze(document.getElementById('width').value)">
+            <input type="button" name="find-sol" id="findSol" onclick="astar(0)" value="Find Solution">
+          </form>
+      </div>
+      </div>
+      </div>
+  <footer>Made by Cameron Fung and Hazel Phyu Douglas College 2022</footer>
+  </body>
+</html>
